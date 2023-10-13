@@ -229,6 +229,17 @@
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(400,660)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EN"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(420,640)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="REG_W_DATA"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="0" loc="(440,1090)" name="Tunnel">
       <a name="label" val="SUB"/>
       <a name="labelfont" val="SansSerif bold 11"/>
@@ -243,8 +254,23 @@
       <a name="label" val="ADD"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(470,1190)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ADD"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(470,1220)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="SUB"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(490,410)" name="Tunnel">
       <a name="label" val="INSTRUCTION"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(520,820)" name="Tunnel">
+      <a name="label" val="REG_W_DATA"/>
       <a name="labelfont" val="SansSerif bold 11"/>
       <a name="width" val="32"/>
     </comp>
@@ -267,6 +293,10 @@
     </comp>
     <comp lib="0" loc="(600,1090)" name="Splitter">
       <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(650,1210)" name="Tunnel">
+      <a name="label" val="EN"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(670,570)" name="Splitter">
       <a name="appear" val="right"/>
@@ -295,6 +325,7 @@
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(80,40)" name="Clock"/>
+    <comp lib="1" loc="(570,1210)" name="OR Gate"/>
     <comp lib="2" loc="(620,1040)" name="Multiplexer">
       <a name="select" val="2"/>
       <a name="width" val="4"/>
@@ -368,14 +399,19 @@
     <wire from="(400,380)" to="(400,410)"/>
     <wire from="(400,380)" to="(450,380)"/>
     <wire from="(400,410)" to="(490,410)"/>
+    <wire from="(400,660)" to="(450,660)"/>
     <wire from="(410,110)" to="(410,120)"/>
     <wire from="(420,110)" to="(420,120)"/>
+    <wire from="(420,640)" to="(450,640)"/>
     <wire from="(430,110)" to="(430,120)"/>
     <wire from="(440,110)" to="(440,120)"/>
     <wire from="(450,110)" to="(450,120)"/>
     <wire from="(460,110)" to="(460,120)"/>
     <wire from="(460,350)" to="(460,360)"/>
+    <wire from="(460,820)" to="(520,820)"/>
     <wire from="(470,110)" to="(470,120)"/>
+    <wire from="(470,1190)" to="(520,1190)"/>
+    <wire from="(470,1220)" to="(520,1220)"/>
     <wire from="(470,350)" to="(470,360)"/>
     <wire from="(480,110)" to="(480,120)"/>
     <wire from="(480,350)" to="(480,360)"/>
@@ -386,6 +422,7 @@
     <wire from="(510,110)" to="(510,120)"/>
     <wire from="(510,350)" to="(510,360)"/>
     <wire from="(520,110)" to="(520,120)"/>
+    <wire from="(520,1220)" to="(520,1230)"/>
     <wire from="(520,350)" to="(520,360)"/>
     <wire from="(530,1030)" to="(580,1030)"/>
     <wire from="(530,1050)" to="(540,1050)"/>
@@ -402,6 +439,7 @@
     <wire from="(560,110)" to="(560,120)"/>
     <wire from="(560,350)" to="(560,360)"/>
     <wire from="(570,110)" to="(570,120)"/>
+    <wire from="(570,1210)" to="(650,1210)"/>
     <wire from="(570,350)" to="(570,360)"/>
     <wire from="(580,1090)" to="(580,1100)"/>
     <wire from="(580,110)" to="(580,120)"/>
